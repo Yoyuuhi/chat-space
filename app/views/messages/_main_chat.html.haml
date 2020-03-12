@@ -1,0 +1,32 @@
+.main_chat
+  .main_chat__group_info
+    .main_chat__group_info--left
+      .main_chat__group_info--left--group_name
+        TEST
+      .main_chat__group_info--left--member_list
+        Member: Kishou
+    .main_chat__group_info--right
+      = link_to "#", class: "main_chat__group_info--right--btn" do
+        Edit
+  .main_chat__message_list
+    .main_chat__message_list--user_info
+      .main_chat__message_list--user_info--name
+        Kishou
+      .main_chat__message_list--user_info--time
+        2020/3/12(THU) 9:01:00
+    .main_chat__message_list--message
+      おはよう！
+    .main_chat__message_list--user_info
+      .main_chat__message_list--user_info--name
+        Kishou
+      .main_chat__message_list--user_info--time
+        2020/3/12(THU) 9:02:00
+    .main_chat__message_list--message
+      晩飯は肉！
+  .main_chat__message_form
+    .main_chat__message_form--message_box
+      %input.main_chat__message_form--message_box--message{:type => "text", :placeholder => "type a message"}
+      %label{class: "main_chat__message_form--message_box--img"}
+        = icon('fas', 'image')
+        %input.main_chat__message_form--message_box--file{:type => "file"}
+    %input.main_chat__message_form--send{:type => "submit", :value => "Send"}
