@@ -25,8 +25,8 @@
       晩飯は肉！
   .main_chat__message_form
     .main_chat__message_form--message_box
-      %input.main_chat__message_form--message_box--message{:type => "text", :placeholder => "type a message"}
+      %input.main_chat__message_form--message_box--message{type: "text", placeholder: "type a message"}
       %label{class: "main_chat__message_form--message_box--img"}
         = icon('fas', 'image')
-        %input.main_chat__message_form--message_box--file{:type => "file"}
-    %input.main_chat__message_form--send{:type => "submit", :value => "Send"}
+        %input.main_chat__message_form--message_box--file{type: "file"}
+    %input.main_chat__message_form--send{type: "submit", value: "Send"}
